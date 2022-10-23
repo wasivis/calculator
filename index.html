@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Calculator</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="https://kit.fontawesome.com/77133b1b16.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="btns-grid">
-		<div class="display">0</div>
-		<button id="clear-btn">CLEAR</button>
-		<button id="zero-btn" data-number="">0</button>
-		<button id="equals-btn">=</button>
-		<button id="divide-btn">÷</button>
-		<button id="multiply-btn">x</button>
-		<button id="seven-btn" data-number="">7</button>
-		<button id="eight-btn" data-number="">8</button>
-		<button id="nine-btn" data-number="">9</button>
-		<button id="minus-btn">-</button>
-		<button id="plus-btn">+</button>
-		<button id="six-btn" data-number="">6</button>
-		<button id="five-btn" data-number="">5</button>
-		<button id="four-btn" data-number="">4</button>
-		<button id="one-btn" data-number="">1</button>
-		<button id="two-btn" data-number="">2</button>
-		<button id="three-btn" data-number="">3</button>
-		<button id="decimal-btn">.</button>
+	<div class="main">
+		<div class="calculator">
+			<div class="paper pink">
+				<div class="tape-section"></div>
+				<div class="display">
+					<div class="lastOperationScreen"></div>
+					<div class="currentOperationScreen">0</div>
+				</div>
+				<div class="tape-section"></div>
+			</div>
+			<div class="paper blue">
+				<div class="top-tape"></div>
+				<div class="btns-grid">
+					<button id="clearbtn" class="btn">CLEAR</button>
+					<button id="deletebtn" class="btn">DELETE</button>
+					<button id="zerobtn" class="btn" data-number="">0</button>
+					<button id="equalsbtn" class="btn">=</button>
+					<button id="dividebtn" class="btn" data-operator="">÷</button>
+					<button id="multiplybtn" class="btn" data-operator="">×</button>
+					<button id="sevenbtn" class="btn" data-number="">7</button>
+					<button id="eightbtn" class="btn" data-number="">8</button>
+					<button id="ninebtn" class="btn" data-number="">9</button>
+					<button id="minusbtn" class="btn" data-operator="">-</button>
+					<button id="plusbtn" class="btn" data-operator="">+</button>
+					<button id="sixbtn" class="btn" data-number="">6</button>
+					<button id="fivebtn" class="btn" data-number="">5</button>
+					<button id="fourbtn" class="btn" data-number="">4</button>
+					<button id="onebtn" class="btn" data-number="">1</button>
+					<button id="twobtn" class="btn" data-number="">2</button>
+					<button id="threebtn" class="btn" data-number="">3</button>
+					<button id="decimalbtn" class="btn">.</button>
+				</div>
+			</div>
+		</div>
 	</div>
-	<script src="script.js" defer></script>
+	<div class="space"></div>
+	<div class="footer">
+		<div class="footer-content">
+			<p>Made with</p>
+			<div class="footer-heart-icon">
+				<img src="images/heart-footer.png" width=40px height=46px alt="heart-icon" />
+			</div>
+			<p class="footer-p">&lt; Wasivis © 2022‍ /&gt;</p>
+			<div class="footer-icons">
+				<a href="https://www.github.com/wasivis/" target=”_blank”><i class="fa-brands fa-github"></i>
+				</a>
+				<a
+				href="https://www.linkedin.com/in/ivanmontequin/"
+				target="”_blank”"
+				>
+				<i class="fa-brands fa-linkedin"></i>
+			</a>
+		</div>
+	</div>
+</div>
+<script src="js/script.js" defer></script>
 </body>
 </html>
