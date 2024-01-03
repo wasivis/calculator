@@ -1,1 +1,1 @@
-Live site: https://wasivis.github.io/calculator/
+Paper Calculator made with HTML, CSS and JavaScript.
